@@ -1,0 +1,10 @@
+import "./components/smooth-scroll";
+import "./components/typed";
+import "./components/validation";
+import "./components/get-full-year";
+import "./components/textarea-validation";
+import "./components/textarea-autosize";
+import "./components/aos";
+import "./components/caption-click";
+import "./components/toggle-theme";
+import "./components/menu-active";

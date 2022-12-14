@@ -1,0 +1,129 @@
+.hero {
+  background-image: linear-gradient(
+      rgba(0, 189, 157, 0.4),
+      rgba(0, 189, 157, 0.7)
+    ),
+    url("../../img/hero-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 220px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 50%;
+
+    @include mobile {
+      width: 200px;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 600;
+    max-width: 560px;
+    margin: 0;
+    padding-left: 20px;
+    color: var(--light-color);
+    text-shadow: 1px 1px 5px black;
+
+    &-name {
+      color: var(--accent-color);
+    }
+
+    @include high-tablet {
+      font-size: 2.5rem;
+    }
+
+    @include small-tablet {
+      padding-left: 0;
+      padding-top: 10px;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+
+    @include mobile {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+
+    @include high-tablet {
+      font-size: 1.8rem;
+    }
+
+    @include small-tablet {
+      font-size: 1.8rem;
+    }
+
+    @include mobile {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, 0px);
+    -webkit-tap-highlight-color: transparent;
+
+    animation: float 2s ease-in-out infinite;
+
+    @keyframes float {
+      0% {
+        transform: translate(-50%, 0px);
+      }
+
+      50% {
+        transform: translate(-50%, 20px);
+      }
+      100% {
+        transform: translate(-50%, 0px);
+      }
+    }
+
+    &:hover {
+      transform: translate(-50%, 5px);
+    }
+
+    @include small-tablet {
+      bottom: 30px;
+    }
+  }
+
+  &__arrow-down {
+    width: 40px;
+    height: 40px;
+    fill: var(--light-color);
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      fill: var(--accent-color);
+    }
+  }
+}

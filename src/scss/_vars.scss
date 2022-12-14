@@ -1,0 +1,33 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+  --content-width: 1480px;
+  --content-fluid-width: 1600px; //container x 1820px - 30px paddings
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(
+    var(--content-fluid-width) + (var(--container-offset) * 2)
+  );
+
+  // colors
+  --light-color: #fff;
+  --text-color: #333333;
+  --light-green-color: #00bd9d;
+  --accent-color: #ff9800;
+  --dark-color: #000000;
+  --bg-color: #45454533;
+  --checkbox-bg: #1a857dc2;
+
+  // theme dark
+  --main-dark: #171c20;
+  --light-dark: #22272b;
+  --light-text-dark: #a6a6a6;
+  --light-title-dark: #bfbfbf;
+  --transp-light-dark: #22272bd6;
+  --grdnt-theme-dark: linear-gradient(rgb(0 0 0 / 40%), rgb(84 84 84 / 70%)),
+    url(../../img/hero-bg.jpg), url("../../img/hero-bg.jpg");
+  --light-grey-dark: #303940;
+  --input-light-text-dark: #e4e4e4;
+}

@@ -1,0 +1,110 @@
+.dark-theme {
+  background-color: var(--main-dark);
+  color: var(--light-text-dark);
+}
+
+.header-dark {
+  background-color: var(--light-dark);
+  box-shadow: 0 1px 6px 0px #000;
+}
+
+.nav-dark {
+  @include high-tablet {
+    background-color: var(--light-grey-dark);
+  }
+}
+
+.burger-line-dark {
+  background-color: var(--light-title-dark);
+}
+
+.link-dark {
+  color: var(--light-title-dark);
+}
+
+.hero-dark {
+  background-image: var(--grdnt-theme-dark);
+}
+
+.arrow-dark {
+  fill: var(--light-title-dark);
+}
+
+.hero-title-dark {
+  color: var(--light-title-dark);
+}
+
+.section-title-dark {
+  color: var(--light-title-dark);
+}
+
+.section-title.section-title-dark::before,
+.section-title.section-title-dark::after {
+  background-color: var(--accent-color);
+}
+
+.text-dark {
+  color: var(--light-text-dark);
+}
+
+.custom-checkbox__field.checkbox-dark {
+  background-color: var(--dark-color);
+}
+
+.nav__link:focus.link-dark {
+  color: var(--accent-color);
+  background-color: var(--light-grey-dark);
+}
+
+.nav__link--active.link-dark {
+  color: var(--accent-color);
+  background-color: var(--light-grey-dark);
+}
+
+.portfolio__item--dark {
+  background-color: var(--light-dark);
+  border: 1px solid var(--light-dark);
+}
+
+.portfolio__caption--dark {
+  background-color: var(--transp-light-dark);
+}
+
+.form-wrapper-dark {
+  background-color: var(--main-dark);
+}
+
+.contact__form--dark {
+  background-color: var(--light-dark);
+}
+
+.input-dark {
+  background-color: var(--light-dark);
+}
+
+.form__input.input-dark,
+.textarea-dark {
+  color: var(--input-light-text-dark);
+}
+
+.form__input.input-dark::placeholder,
+.textarea-dark::placeholder {
+  color: var(--light-text-dark);
+}
+
+.portfolio-btn__item.dark-theme-btn {
+  border: 1px solid;
+}
+
+.dark-theme-btn {
+  background-color: var(--light-grey-dark);
+  color: var(--light-text-dark);
+}
+
+.dark-theme-btn:hover {
+  background-color: #343434;
+}
+
+.footer-dark {
+  background-color: var(--light-dark);
+}

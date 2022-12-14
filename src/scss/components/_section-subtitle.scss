@@ -1,0 +1,14 @@
+.section-subtitle {
+  margin: 15px 0;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: var(--light-green-color);
+
+  &:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+  }
+}
