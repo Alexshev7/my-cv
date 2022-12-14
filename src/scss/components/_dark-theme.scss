@@ -38,8 +38,8 @@
   color: var(--light-title-dark);
 }
 
-.section-title.section-title-dark::before,
-.section-title.section-title-dark::after {
+.section-title-dark::before,
+.section-title-dark::after {
   background-color: var(--accent-color);
 }
 
@@ -47,11 +47,11 @@
   color: var(--light-text-dark);
 }
 
-.custom-checkbox__field.checkbox-dark {
+.checkbox-dark {
   background-color: var(--dark-color);
 }
 
-.nav__link:focus.link-dark {
+.link-dark:focus {
   color: var(--accent-color);
   background-color: var(--light-grey-dark);
 }
@@ -82,23 +82,20 @@
   background-color: var(--light-dark);
 }
 
-.form__input.input-dark,
+.input-dark,
 .textarea-dark {
   color: var(--input-light-text-dark);
 }
 
-.form__input.input-dark::placeholder,
+.input-dark::placeholder,
 .textarea-dark::placeholder {
   color: var(--light-text-dark);
 }
 
-.portfolio-btn__item.dark-theme-btn {
-  border: 1px solid;
-}
-
 .dark-theme-btn {
-  background-color: var(--light-grey-dark);
   color: var(--light-text-dark);
+  border: 1px solid;
+  background-color: var(--light-grey-dark);
 }
 
 .dark-theme-btn:hover {
